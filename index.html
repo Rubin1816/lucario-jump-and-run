@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lucario Rush</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div id="game-wrapper">
+    <div id="hud">
+      <div id="score-block">
+        <span class="hud-label">SCORE</span>
+        <span id="score">0</span>
+      </div>
+      <div id="title-block">LUCARIO RUSH</div>
+      <div id="ability-block">
+        <span class="hud-label">AURA BURST</span>
+        <div id="ability-bar-wrap">
+          <div id="ability-bar"></div>
+        </div>
+        <span id="ability-hint">[ LEERTASTE ]</span>
+      </div>
+    </div>
+
+    <canvas id="gameCanvas"></canvas>
+
+    <div id="overlay" class="active">
+      <div id="overlay-content">
+        <h1 id="overlay-title">LUCARIO RUSH</h1>
+        <p id="overlay-subtitle">Springe über Hindernisse und nutze den Aura-Burst!</p>
+        <div id="controls-info">
+          <div class="ctrl"><kbd>↑</kbd> / <kbd>W</kbd> Springen</div>
+          <div class="ctrl"><kbd>SPACE</kbd> Aura-Burst Fähigkeit</div>
+        </div>
+        <button id="start-btn">START</button>
+        <div id="hi-score-display"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
